@@ -46,7 +46,7 @@ export const AxiosExample = () => {
     }, []);
 
     if (error) {
-        return <div>Error: {error.message}</div>;
+        return <div>Error</div>;
     }
 
     if (!isLoaded) {
@@ -58,20 +58,7 @@ export const AxiosExample = () => {
             <header>
                 <h2>Fetch Data Fetching Example</h2>
             </header>
-            <main data-testid="joke-container">
-                <p>Programmer Jokes {`#${data[0].id}`}</p>
-                <p>{data[0].setup}</p>
-                <p>{data[0].punchline}</p>
-            </main>
-            <footer>
-                <a
-                    href="https://github.com/axios/axios"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Go To Documentation
-                </a>
-            </footer>
+            <footer></footer>
         </div>
     );
 };
